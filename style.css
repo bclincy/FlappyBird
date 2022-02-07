@@ -5,14 +5,15 @@
 #game{
     width: 400px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid rgb(4, 101, 4);
+    background-color: skyblue;
     margin: auto;
     overflow: hidden;
 }
 #block{
     width: 50px;
     height: 500px;
-    background-color: black;
+    background-color: rgb(1, 65, 31);
     position: relative;
     left: 400px;
     animation: block 2s infinite linear;
@@ -24,7 +25,7 @@
 #hole{
     width: 50px;
     height: 150px;
-    background-color: white;
+    background-color: skyblue;
     position: relative;
     left: 400px;
     top: -500px;

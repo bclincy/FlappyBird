@@ -3,12 +3,29 @@ var hole = document.getElementById("hole");
 var character = document.getElementById("character");
 var jumping = 0;
 var counter = 0;
+var doc = document.getElementById("game");
+var color = ["black", "blue", "brown", "green"];
+
 
 hole.addEventListener('animationiteration', () => {
     var random = -((Math.random()*300)+150);
     hole.style.top = random + "px";
     counter++;
 });
+
+function barMoving () {
+
+}
+
+var i = 0;
+function changeBackground() {
+  doc.style.backgroundColor = color[i];
+  i++;
+  if(i > color.length - 1) {
+    i = 0;
+  }
+}
+
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
